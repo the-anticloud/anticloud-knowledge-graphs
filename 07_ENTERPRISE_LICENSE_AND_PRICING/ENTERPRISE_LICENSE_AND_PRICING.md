@@ -1,0 +1,25 @@
+# Enterprise License and Pricing — KNOWLEDGE_GRAPHS
+
+**Company:** Anticloud FZ LLE
+**Model:** PAX L5 Narrow L2 General 27B
+**Project:** KNOWLEDGE_GRAPHS | Category: PHILOSOPHY_SEMANTICS
+**Upstream:** https://github.com/allenai/knowledge-graphs (MIT)
+
+## Overview
+
+This document covers enterprise license and pricing for the Anticloud integration of KNOWLEDGE_GRAPHS.
+
+Commonsense knowledge graph tools
+
+## Anticloud Integration
+
+PAX L5 Narrow L2 General 27B is integrated into KNOWLEDGE_GRAPHS to provide:
+- Local AI inference with zero cloud dependency
+- AIOSS tamper-evident audit chain
+- AES-256 encryption at rest
+- Single-binary deployment
+
+## Contact
+
+Lois-Kleinner Alpasan — CEO & CTO, Anticloud FZ LLE
+lois@0-1.gg | 0-1.gg
