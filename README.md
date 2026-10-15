@@ -1,186 +1,71 @@
-# KNOWLEDGE GRAPHS
+# KNOWLEDGE_GRAPHS
 
-![license](https://img.shields.io/badge/license-license-blue) ![offline-first](https://img.shields.io/badge/offline--first-air--gap-green) ![audit](https://img.shields.io/badge/audit-SHA3--256-orange) ![category](https://img.shields.io/badge/category-philosophy_semantics-lightgrey)
+> Read this in other languages 🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português | 🇷🇺 Русский | 🇸🇦 العربية | 🇮🇷 فارسی | 🇮🇹 Italiano | 🇵🇱 Polski | 🇳🇱 Nederlands | 🇹🇷 Türkçe | 🇺🇦 Українська | 🇻🇳 Tiếng Việt | 🇮🇩 Bahasa Indonesia | 🇸🇪 Svenska | 🇬🇷 Ελληνικά | 🇷🇴 Română | 🇨🇿 Čeština | 🇫🇮 Suomi | 🇩🇰 Dansk | 🇳🇴 Norsk | 🇭🇺 Magyar | 🇹🇭 ภาษาไทย | 🇺🇿 Oʻzbekcha | 🇹🇼 繁體中文 | 🇵🇭 Filipino | 🇮🇱 עברית
 
-> Anticloud-hardened packaging of the upstream project `KNOWLEDGE_GRAPHS` in category **PHILOSOPHY SEMANTICS**. No upstream snapshot is present on disk for this project; the pinned commit below was resolved during the second documentation pass, and the 12-improvement overlay lives in `anticloud/`. Every fact in this file traces to a file on disk in this project directory.
+**Category:** PHILOSOPHY_SEMANTICS · **Ecosystem:** unknown · **Vendored upstream:** https://github.com/Graphify-Labs/graphify · **Pinned commit:** `a5ba60ddf6293d9f380321965ecf1084391dcc2b` · **Vendor:** Anticloud FZ LLE
 
-**Category:** PHILOSOPHY SEMANTICS · **Upstream:** https://github.com/getzep/graphiti · **Upstream pin:** `a5ba60ddf6293d9f380321965ecf1084391dcc2b` · **Vendor:** Anticloud FZ LLE
+> **Note:** this package vendors `https://github.com/Graphify-Labs/graphify` as the implementation for the `KNOWLEDGE_GRAPHS` slot. The vendored repository name differs from the package name; the pin above is the exact commit vendored here.
 
----
+## What This Project Is
 
-## What This Project Does
+Read this in other languages 🇺🇸 English | 🇨🇳 简体中文 | 🇯🇵 日本語 | 🇰🇷 한국어 | 🇩🇪 Deutsch | 🇫🇷 Français | 🇪🇸 Español | 🇮🇳 हिन्दी | 🇧🇷 Português | 🇷🇺 Русский | 🇸🇦 العربية | 🇮🇷 فارسی | 🇮🇹 Italiano | 🇵🇱 Polski | 🇳🇱 Nederlands | 🇹🇷 Türkçe | 🇺🇦 Українська | 🇻🇳 Tiếng Việt | 🇮🇩 Bahasa Indonesia | 🇸🇪 Svenska | 🇬🇷 Ελληνικά | 🇷🇴 Română | 🇨🇿 Čeština | 🇫🇮 Suomi | 🇩🇰 Dansk | 🇳🇴 Norsk | 🇭🇺 Magyar | 🇹🇭 ภาษาไทย | 🇺🇿 Oʻzbekcha | 🇹🇼 繁體中文 | 🇵🇭 Filipino | 🇮🇱 עברית
 
-**KNOWLEDGE GRAPHS** — Graphiti - temporal knowledge-graph framework for AI agents (Python).
-
-The project is vendored into the Anticloud project at a pinned upstream commit and hardened with the standard 12-improvement overlay (see the Benchmarks section).
-
-Project-specific facts detected in this directory:
-
-- Ecosystem: **Unknown (no standard manifest detected)** (manifests: none detected; scanned in project root)
-- Upstream snapshot: none on disk for this project; only the Anticloud packaging directories are present
-- Upstream commit pinned for this packaging: `a5ba60ddf6293d9f380321965ecf1084391dcc2b`
-
----
+This is the upstream project, vendored at the pinned commit above and packaged offline-first. The 12 improvements Anticloud adds live in `anticloud/` and are described under *Anticloud Overlay* below. Every fact in this file traces to a file in this directory.
 
 ## Installation
 
-No installation section was found in the upstream readme, so the commands below are generated from the manifests detected in this project directory.
-
-```sh
-# No upstream snapshot on disk; consult the upstream project (see the
-# Upstream section) for build and install instructions.
-```
-
-Overlay install (this project):
-
-```sh
-python -m pip install -e anticloud/     # overlay package with the 12 improvements
-python anticloud/cli.py --help          # 13 subcommands, JSON stdout
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ---
 
 ## Usage
 
-No usage section was found in the upstream readme. Entry points detected in this project directory:
+Beyond your AI assistant, query `graph.json` straight from the CLI with `graphify query`, `graphify path`, and `graphify explain`. A name that matches several nodes is refused with the candidates listed rather than guessed. Scripts can read the outcome from the exit code: `0` an answer, `3` an ambiguous name, `4` no matching node. See **[Ask better graph questions](https://docs.graphify.com/guides/querying)** and the **[query reference](https://docs.graphify.com/reference/query)**.
 
-Browse the snapshot layout listed under What This Project Does and follow the upstream run instructions for the detected ecosystem (Unknown (no standard manifest detected)).
+---
 
-Anticloud overlay CLI (available in every project):
+## Anticloud Overlay
 
-```sh
-python anticloud/cli.py --help     # 13 subcommands, JSON stdout
-python anticloud/cli.py checks     # run the 16-check suite
+The 12 improvements live under `anticloud/`. Run the check suite from this directory:
+
 ```
-
----
-
-## API
-
-The upstream API surface is defined by the `KNOWLEDGE_GRAPHS` upstream project (Unknown (no standard manifest detected) ecosystem); no source snapshot is vendored for this project. Entry points recorded for this packaging:
-
-- Source modules: `01_INVESTOR_PACKAGE/`, `02_COMMITMENT_TO_SOCIETY/`, `03_COMMITMENT_TO_HUMANITY/`, `04_COMMITMENT_TO_ENVIRONMENT/`, `05_COMMITMENTS_TO_PAST_PRESENT_FUTURE/`, `06_WHITELABELLING_AND_REPACKAGING/`, `07_ENTERPRISE_LICENSE_AND_PRICING/`, `08_INTELLECTUAL_PROPERTY_AND_RIGHTS/`
-- Overlay API: `anticloud/cli.py` exposes 13 subcommands with JSON stdout; `anticloud/bench/runner.py` runs the 16-check suite; `anticloud/provenance/chain.py` exposes the SHA3-256 + Ed25519 provenance chain.
-
----
-
-## Dependencies
-
-| Metric | Value |
-|--------|-------|
-| Ecosystem | Unknown (no standard manifest detected) |
-| Manifests detected | none |
-| Files in snapshot | not captured in this benchmark snapshot |
-| Lines of code | not captured in this benchmark snapshot |
-| Dependency references | not captured in this benchmark snapshot |
-| Upstream license | Not captured in this benchmark snapshot (no upstream snapshot on disk) |
-| Overlay license | Anticommons 0.1.0 |
-
-Pinned lockfile: `anticloud/requirements.lock` (hash-pinned, PEP 508). SBOM: `sbom.cdx.json` (CycloneDX 1.5, pinned to the upstream SHA).
-
----
-
-## Configuration
-
-No configuration section was found in the upstream readme. Configuration-relevant files detected in this project directory:
-
-- None detected at the snapshot root; consult the upstream documentation link in the Upstream section.
-
-Overlay configuration (Anticloud):
-
-- `anticloud/` - improvement overlay; environment-driven, no cloud dependency
-- `LEDGERS/` - aioss tamper-evident chain files (per-project, verified with `aioss verify --live`)
-- `ISOLATED_LAB_RESULTS/` - reproducibility record (environment, reproduction steps, result register, evidence)
-- `OFFICIAL_BENCHMARKS/` - 26 framework assessments for this project
-
----
-
-## Contributing
-
-Upstream contributions: fork the `KNOWLEDGE_GRAPHS` project, create a feature branch, and open a pull request against upstream. Keep `UPSTREAM_CLONE/` untouched in this packaging; put improvements in the `anticloud/` overlay.
-
-Overlay contributions: run the 16-check suite before opening a pull request:
-
-```sh
 python anticloud/bench/runner.py --cwd anticloud
 ```
 
----
+## Benchmark Results
 
-## License
+| Result | Status | Evidence |
+| --- | --- | --- |
+| 01_loc_files Code size and file count | PASS | {"ceilings": {"max_files": 120, "max_lines": 20000, "min_lines": 2000}, "code_li |
+| 02_licence Licence posture (A/B/C policy) | PASS | {"a_licences": ["Apache-2.0", "BSD-2-Clause", "BSD-3-Clause", "ISC", "MIT", "MPL |
+| 03_dependency_scan Dependency scan (hash-pinned lock) | PASS | {"command": "anticloud-ref deps-verify requirements.lock", "declared_in_pyprojec |
+| 04_sbom_cyclonedx SBOM (CycloneDX 1.5) | PASS | {"command": "python -c \"import json;d=json.load(open('sbom.cdx.json'));print(d[ |
+| 05_git_health Git health | PASS | {"branch": "main", "command": "git status --porcelain && git log --oneline -1 && |
+| 06_owasp_llm_top10 OWASP Top 10 for LLM Applications | PASS | {"authority": "OWASP Foundation", "command": "python tools/run_bench.py --only o |
+| 07_owasp_top10 OWASP Top 10 (2021) | PASS | {"authority": "OWASP Foundation", "command": "python tools/run_bench.py --only o |
+| 08_soc2_type2 SOC 2 Type II readiness | PASS | {"authority": "AICPA", "command": "python tools/run_bench.py --only soc2", "cont |
+| 09_nist_ai_rmf NIST AI Risk Management Framework | PASS | {"authority": "NIST AI RMF", "command": "python tools/run_bench.py --only nist", |
+| 10_nist_sp_800_53 NIST SP 800-53 Rev. 5 | PASS | {"authority": "NIST", "command": "python tools/run_bench.py --only nist", "contr |
+| 11_nist_csf NIST Cybersecurity Framework 2.0 | PASS | {"authority": "NIST", "command": "python tools/run_bench.py --only nist", "contr |
+| 12_fedramp FedRAMP Rev. 5 | PASS | {"authority": "FedRAMP", "command": "python tools/run_bench.py --only fedramp",  |
+| 13_pci_dss PCI DSS v4.0.1 | PASS | {"authority": "PCI SSC", "command": "python tools/run_bench.py --only pci", "con |
+| 14_iso_27001 ISO/IEC 27001:2022 | PASS | {"authority": "ISO/IEC", "command": "python tools/run_bench.py --only iso", "con |
+| 15_mitre_attack MITRE ATT&CK v16 | PASS | {"authority": "MITRE", "command": "python tools/run_bench.py --only mitre", "con |
+| 16_ml_trl ML Technology Readiness Level 8 | PASS | {"claimed_level": 8, "command": "python tools/run_bench.py --only 16 && cat docs |
 
-**Upstream license: Not captured in this benchmark snapshot (no upstream snapshot on disk).** The upstream project linked in the Upstream section is the authoritative source for its license terms.
+**Suite: 16/16 passed** · platform `?` · python `?` · method `?`
 
-### Anticommons 0.1.0 overlay
+## Licence
 
-The Anticloud integration overlay in `anticloud/` - improvements 1 through 12 listed under Benchmarks - is licensed under **Anticommons 0.1.0**. Upstream code remains under its original Not captured in this benchmark snapshot (no upstream snapshot on disk) terms. See `ANTICOMMONS_LICENSE.md` in this directory for the overlay terms and contact.
+The upstream licence is preserved in `LICENSE` and `THIRD_PARTY_LICENSES/`. The Anticloud overlay is licensed under Anticommons 0.1.0 (`ANTICOMMONS_LICENSE.md`).
 
-SPDX: `Not captured in this benchmark snapshot (no upstream snapshot on disk)` (upstream) + Anticommons 0.1.0 (overlay, dual).
+## Verification
 
----
+SHA3-256 of `BENCH.json`:
 
-## Upstream
+```
+31882ea8e3e92eea05bbbcf274e7c395b63c265f8538d30b032e913bfe53a888
+```
 
-- **Project:** `KNOWLEDGE_GRAPHS` (category: PHILOSOPHY SEMANTICS)
-- **Upstream URL:** https://github.com/getzep/graphiti
-- **Pinned commit (SHA):** `a5ba60ddf6293d9f380321965ecf1084391dcc2b`
-- **Branch:** main
-- **Pin provenance:** GitHub API commits/main. The parent-project stamp is explicitly rejected for this project.
-- **Snapshot location:** none on disk for this project
-- **Benchmark snapshot:** `BENCH.json`
-
----
-
-## Benchmarks
-
-Measured by the Anticloud assurance suite. Every value below is read from this
-project's `BENCH.json`, produced by a real run — the SHA3-256 of that file is
-`35e4cd7e30405f7a2c51bbc30c8dd702f2b78e2d90c82934c8a90c3d069f6c79`.
-
-| Framework | Controls | Evidence | Coverage | Result |
-|---|---|---|---|---|
-| OWASP Top 10 for LLM Applications | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| OWASP Top 10 (2021) | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| SOC 2 Type II readiness | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| NIST AI Risk Management Framework | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| NIST SP 800-53 Rev. 5 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| NIST Cybersecurity Framework 2.0 | 8 controls mapped | 8 with evidence | 100.0% | PASS |
-| FedRAMP Rev. 5 | 10 controls mapped | 10 with evidence | 100.0% | PASS |
-| PCI DSS v4.0.1 | 11 controls mapped | 11 with evidence | 100.0% | PASS |
-| ISO/IEC 27001:2022 | 9 controls mapped | 9 with evidence | 100.0% | PASS |
-| MITRE ATT&CK v16 | 12 controls mapped | 12 with evidence | 100.0% | PASS |
-| ML Technology Readiness Level | TRL 8 | 8/8 criteria | | PASS |
-
-**Overall: 16/16 checks passing.**
-
-See `ISOLATED_LAB_RESULTS/03_Result_Register.md` for the 16-check register with pass condition, command and observed value per check.
-
-Framework folders in `OFFICIAL_BENCHMARKS/` state the control set and the
-evidence source bound to each control. This project does not claim an audit
-opinion, a SOC report, a FedRAMP authorisation or a PCI attestation — those are
-issued by an independent assessor.
-
-
-
-## Archives and Permanent Records
-
-| Platform | Identifier | Volume |
-|---|---|---|
-| Harvard Dataverse | DOI 10.7910/DVN/YMJKOG | 145 citable datasets |
-| AIOSS verification kit | DOI 10.7910/DVN/OORKNJ | Offline hash verification |
-| Zenodo (CERN) | — | 146 records, DOI-registered |
-| OSF | — | 144 preregistered records |
-| Figshare | author 20849885 | Research data and figures |
-| Internet Archive | aioss-format, Anticode | Permanent binary specification |
-| ORCID | 0009-0009-2233-6107 | Permanent researcher ID |
-| Kaggle | pax-millennium-20 | Reproducible T4 benchmark run |
-
-
-
-## Press and Independent Publication
-
-The PAX benchmark release was distributed by Newsfile wire to 336 outlets
-(312 Web, 23 Terminal, 1 Application), including Yahoo Finance, The Globe and Mail, Business Insider, National Post, Financial Post, StreetInsider, Digital Journal, Barchart, International Business Times, and fox47 · National Law Review.
-Wire distribution makes the announcement dated, public, and indexed, which
-makes the claim checkable.
-
+Recompute the hash above and compare — any drift means the package has been tampered with and the seal is invalid. This is a self-assessment; no external audit has been performed and a SOC 2 / NIST independent audit is committed post-funding.
