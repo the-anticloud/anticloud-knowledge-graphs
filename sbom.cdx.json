@@ -1,0 +1,95 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:eca17aae-26c3-5e99-8f35-24c381a91593",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-12T06:23:45Z",
+    "component": {
+      "type": "application",
+      "name": "KNOWLEDGE_GRAPHS",
+      "version": "a5ba60ddf629",
+      "bom-ref": "pkg:generic/anticloud/KNOWLEDGE_GRAPHS@a5ba60ddf629",
+      "purl": "pkg:generic/anticloud/KNOWLEDGE_GRAPHS@a5ba60ddf629",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "anticloud:source-commit",
+        "value": "a5ba60ddf6293d9f380321965ecf1084391dcc2b"
+      },
+      {
+        "name": "anticloud:source-url",
+        "value": ""
+      },
+      {
+        "name": "anticloud:tier",
+        "value": "tier-agent"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "networkx",
+      "version": ">=3.4",
+      "purl": "pkg:pypi/networkx@3.4",
+      "bom-ref": "pypi/networkx@>=3.4"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": ">=1.21",
+      "purl": "pkg:pypi/numpy@1.21",
+      "bom-ref": "pypi/numpy@>=1.21"
+    },
+    {
+      "type": "library",
+      "name": "rapidfuzz",
+      "version": ">=3.0",
+      "purl": "pkg:pypi/rapidfuzz@3.0",
+      "bom-ref": "pypi/rapidfuzz@>=3.0"
+    },
+    {
+      "type": "library",
+      "name": "tomli",
+      "version": ">=2.0.1",
+      "purl": "pkg:pypi/tomli@2.0.1",
+      "bom-ref": "pypi/tomli@>=2.0.1"
+    },
+    {
+      "type": "library",
+      "name": ".",
+      "version": "Floor",
+      "purl": "pkg:pypi/.@Floor",
+      "bom-ref": "pypi/.@Floor"
+    },
+    {
+      "type": "library",
+      "name": "name",
+      "version": "crate_b",
+      "purl": "pkg:cargo/name@crate_b",
+      "bom-ref": "cargo/name@crate_b"
+    },
+    {
+      "type": "library",
+      "name": "version",
+      "version": "0.1.0",
+      "purl": "pkg:cargo/version@0.1.0",
+      "bom-ref": "cargo/version@0.1.0"
+    },
+    {
+      "type": "library",
+      "name": "edition",
+      "version": "2021",
+      "purl": "pkg:cargo/edition@2021",
+      "bom-ref": "cargo/edition@2021"
+    }
+  ]
+}
