@@ -2,13 +2,11 @@
  "schema": "anticloud.tier-bench/1",
  "project": "KNOWLEDGE_GRAPHS",
  "source": {
-  "repo_path": "E:\\fenta\\Downloads\\The Anticloud\\ANTICLOUD_REPOS\\PHILOSOPHY_SEMANTICS\\KNOWLEDGE_GRAPHS\\UPSTREAM_CLONE",
   "git": {
-   "head": "a5ba60ddf6293d9f380321965ecf1084391dcc2b",
-   "url": "https://github.com/Graphify-Labs/graphify",
-   "branch": "v8",
-   "committed_at": "",
-   "sha_verified_from": "GitHub API substitute swap 2026-10-12 | unified 2026-10-14 (API-exists + content/clone anchor)"
+   "url": "https://github.com/shaoxiongji/knowledge-graphs",
+   "head": "1e1b1e3a8b83e9dbbaf4c55ce63ad80a894bf42c",
+   "sha_verified_from": "revendor 2026-10-15: GitHub API commit lookup",
+   "previous_substitute": "https://github.com/Graphify-Labs/graphify"
   }
  },
  "metrics": {
